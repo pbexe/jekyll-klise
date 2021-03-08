@@ -6,8 +6,6 @@ excerpt: Some subtitle
 comments: false
 ---
 
-blahblahblah
-
 **links ✨**
 
 - {{ site.author.email }}
