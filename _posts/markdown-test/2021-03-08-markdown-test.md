@@ -1,6 +1,6 @@
 ---
 title: Markdown Test
-date: 2021-03-08
+date: 2021-03-08 10:00:00 +00:00
 # modified: 2019-08-29 09:24:47 +07:00
 tags: [markdown, test]
 description: A test to see how the site renders markdown
