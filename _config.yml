@@ -65,6 +65,9 @@ number_of_posts: 5
 sass:
   style: compressed
 
+offline:
+  strategy: cache-only
+
 include:
   - _redirects
   - .htaccess
@@ -89,3 +92,4 @@ plugins:
   - jekyll-sitemap
   - jekyll-postfiles
   - jekyll-seo-tag
+  - jekyll-offline
