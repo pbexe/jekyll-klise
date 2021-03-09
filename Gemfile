@@ -22,8 +22,7 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap', '~> 1.4'
   gem 'jekyll-compose', '~> 0.12.0'
   gem 'jekyll-postfiles', '~> 3.1'
-  gem 'jekyll-seo-tag'
-  gem 'jekyll-offline', :git => 'git://github.com/jeremiak/jekyll-offline.git'
+  gem 'jekyll-pwa-plugin'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
