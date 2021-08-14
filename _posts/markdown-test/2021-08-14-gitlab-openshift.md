@@ -32,6 +32,8 @@ build:
 
 The only modification to this is that it also creates an image with the tag `latest` on build. This will be helpful as later we can point the Openshift image-stream to this label to automatically update the deployment upon build. An important detail to note is the `if: $CI_COMMIT_TAG` rule. This means that the pipeline will only run the build on a new tag, not on a commit. This leaves the developer with more fine-grained control of when the build runs.
 
+Kaniko was advantageous here over using docker to build the image as using docker would require docker-in-docker (DinD) which poses security risks as well as larger overheads. Kaniko can build docker images but does it in userspace which is more suited to running in a docker container.
+
 > `git push` will not push local tags by default. This is usually helpful as it prevents conflicts with other tags on the remote. In this case the `git push --follow-tags` command will push tags with annotations to the remote, thus triggering a build.
 
 Once we push a tag, the pipeline will build the image and upload it to the repo's docker registry.
