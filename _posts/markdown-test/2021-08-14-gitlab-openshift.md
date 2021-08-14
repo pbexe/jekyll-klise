@@ -87,10 +87,28 @@ The `--scheduled` tag means that the Openshift instance automatically checks for
 
 ## Deploying an application using the image-stream
 
-This is now the easy part. To deploy a new application, we can use the `oc new-app image_stream_name`. This will create all of the correct Openshift objects for the application to run with the name `image_stream_name`.
+This is now the easy part. To deploy a new application, we can use the following command:
+
+```sh
+$ oc new-app image_stream_name
+```
+
+This will create all of the correct Openshift objects for the application to run with the name `image_stream_name`.
 
 
-The final step is to expose the application to the outside world. We can do this with the `oc expose svc/image_stream_name`. This uses the `EXPOSE` command from earlier to work out automatically which port from the pod to open. By default, the application will then be available on port 80 with so SSL. Adding SSL is better documented than importing images from Gitlab and is therefore beyond the scope of this post. In order to get the DNS of the application, you can run `oc describe routes/image_stream_name`. The DNS can be found under the `Requested Host` label.
+The final step is to expose the application to the outside world. We can do this with the following command:
+
+```sh
+$ oc expose svc/image_stream_name
+```
+
+This uses the `EXPOSE` command from earlier to work out automatically which port from the pod to open. By default, the application will then be available on port 80 with so SSL. Adding SSL is better documented than importing images from Gitlab and is therefore beyond the scope of this post. In order to get the DNS of the application, you can run the following command:
+
+```sh
+$ oc describe routes/image_stream_name
+```
+
+The DNS can be found under the `Requested Host` label.
 
 I hope that my trial and error saves you some time and some Kubernetes related pains.
 
