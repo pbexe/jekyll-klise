@@ -52,10 +52,10 @@ Now that we have logged in to Openshift, we need to create the secrets to authen
 
 ```sh
 $ oc create secret docker-registry gitlab \
---docker-server=registry.git.example.com \
---docker-username=your_username \
---docker-password=your_password_or_token \
---docker-email=your_email@example.com
+  --docker-server=registry.git.example.com \
+  --docker-username=your_username \
+  --docker-password=your_password_or_token \
+  --docker-email=your_email@example.com
 
 $ oc secrets link builder gitlab --for=pull
 $ oc secrets link default gitlab --for=pull
