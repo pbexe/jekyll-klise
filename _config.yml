@@ -1,23 +1,23 @@
 # Site settings
 title: miles.so # site title
 description: >- # site description
-  This is a test site 123
+  I write things sometimes
 lang: en-GB # default lang
 timezone: Europe/London # set your timezone
 image: assets/img/avatar.jpg # This image used for Open Graph more info https://ogp.me/
-repo: https://github.com/piharpi/jekyll-klise # site repo [optional]
+# repo: https://github.com/piharpi/jekyll-klise # site repo [optional]
 mode: dark # default theme "dark" | "light"
 
 # Profile settings
 author:
   name: Miles # author name
   bio: >- # tell to the world
-    This is currently a test site.
+    ...
   # username: username # general username
   github: pbexe # github username
   # twitter: twitter_username # twitter username
   # facebook: facebook_username # facebook username
-  email: contact@milesbudden.com # email adress
+  email: contact@miles.so # email adress
   avatar: /assets/img/avatar.jpg # change with your own avatar
 
 # URL settings
