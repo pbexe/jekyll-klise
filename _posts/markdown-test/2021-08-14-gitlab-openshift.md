@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Deploying a Gitlab repo to Openshift"
-date:   2021-03-08 09:29:20
+date:   2021-08-14 09:29:20
 categories: openshift docker kubernetes gitlab
 ---
 
